@@ -1,8 +1,9 @@
 import abc
 import Tensor4Me as t4m
 
-class Function(object, metaclass=abc.ABCMeta):
-    def __call__(self, variable: t4m.Variable):
+
+class Base(object, metaclass=abc.ABCMeta):
+    def __call__(self, variable):
         self.variable = variable
         x = variable.data
         y = self.forward(x)

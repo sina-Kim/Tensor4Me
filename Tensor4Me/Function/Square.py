@@ -1,6 +1,7 @@
-import Tensor4Me as t4m
+from .Base import Base
 
-class Square(t4m.Function.Base):
+
+class Square(Base):
     def forward(self, x):
         return x ** 2
 

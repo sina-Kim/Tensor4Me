@@ -1,7 +1,8 @@
 import numpy as np
-import Tensor4Me as t4m
+from .Base import Base
 
-class Exp(t4m.Function.Base):
+
+class Exp(Base):
     def forward(self, x):
         return np.exp(x)
 

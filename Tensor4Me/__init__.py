@@ -1,2 +1,2 @@
-import Function
-from Variable import Variable
+from .Variable import Variable
+from . import Function
